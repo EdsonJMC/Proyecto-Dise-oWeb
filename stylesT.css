@@ -1,0 +1,114 @@
+body{
+    background-color: #101227;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 12px;
+}
+
+.Tierra{
+    width: 12cm;
+    height: 12cm;
+    background-image: url('./images/earth.png');
+    background-size: cover;
+    border-radius: 120%;
+    box-shadow: 
+        0 0 1em 0 rgba(76, 147, 254, 0.502),
+        0 0 1em 2em rgba(70, 82, 255, 0.2),
+        0 0 10em 4em rgba(104, 77, 255, 0.102);
+    position: relative;
+}
+
+.Luna, .Luna::after{
+    content: "";
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+}
+
+.Luna{
+    background-image: url('./images/moon.png');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 32em;
+    transform: rotate(20deg);
+    animation: round 5s infinite ease-in-out;
+}
+
+.Luna::after{
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 5s infinite ease-in-out;
+}
+
+@keyframes shadow {
+    0% {
+        width: 2.5em;
+        left: 0;
+    }
+
+    25% {
+        width: 5em;
+        left: 0;
+    }
+
+    50% {
+        width: 2.5em;
+        left: 2.5em;
+    }
+
+    75% {
+        width: 0em;
+        left: 5em;
+    }
+
+    80% {
+        left: 0;
+        box-shadow: 0 0 0.55em 0.75em #262938;
+    }
+
+    100% {
+        width: 2.5em;
+        left: 0;
+    }
+}
+
+@keyframes round {
+    0%,
+    100% {
+        top: 2em;
+        left: -15em;
+        box-shadow: -2em 0 5em 0.5em #648ec666;
+        z-index: 2;
+    }
+
+    25% {
+        box-shadow: 0 0 3em 1em #040541b5;
+    }
+
+    75% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    48% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #4c468482;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}

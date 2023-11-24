@@ -1,0 +1,23 @@
+body{
+    background-color: #101227;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 12px;
+}
+
+.Pluto {
+    width: 12cm;
+    height: 12cm;
+    background: #b4a4cc;
+    background-size: cover;
+    background-image: url('./images/pluto.png');
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 
+        0 0 5em 0 #fed84c80,
+        0 0 20em 4em #e8a55233,
+        0 0 55em 8em #ff4d4d1a;
+}

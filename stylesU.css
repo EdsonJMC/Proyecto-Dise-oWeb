@@ -1,0 +1,1989 @@
+body{
+    background-color: #101227;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 12px;
+}
+
+.Urano {
+    width: 12cm;
+    height: 12cm;
+    background: #b4a4cc;
+    background-size: cover;
+    background-image: url('./images/uranus.png');
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 
+        0 0 5em 0 #fed84c80,
+        0 0 20em 4em #e8a55233,
+        0 0 55em 8em #ff4d4d1a;
+}
+
+.Meteorito, .Meteorito::after{
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito{
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 300ms;
+    left: 32em;
+    transform: rotate(160deg);
+    animation: round 1s infinite ease-in-out;
+}
+
+.Meteorito::after{
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 1s infinite ease-in-out;
+}
+
+
+@keyframes round {
+    0%,
+    100% {
+        top: 2em;
+        left: -15em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 2;
+    }
+
+    25% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    75% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    48% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito2, .Meteorito2::after{
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito2{
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 2s infinite ease-in-out;
+}
+
+.Meteorito2::after{
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 2s infinite ease-in-out;
+}
+
+
+@keyframes Meteorito {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    25% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    48% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    75% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+
+.Meteorito3, .Meteorito3::after{
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito3{
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 1.5s infinite ease-in-out;
+}
+
+.Meteorito3::after{
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 1.5s infinite ease-in-out;
+}
+
+
+@keyframes Meteorito2 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    25% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    48% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    75% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+
+.Meteorito4, .Meteorito4::after{
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito4{
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 50s infinite ease-in-out;
+}
+
+.Meteorito4::after{
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 50s infinite ease-in-out;
+}
+
+
+@keyframes Meteorito4 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    25% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    48% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    75% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito5, .Meteorito5::after{
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito5{
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 0.3s infinite ease-in-out;
+}
+
+.Meteorito5::after{
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 0.3s infinite ease-in-out;
+}
+
+
+@keyframes Meteorito5 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    25% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    48% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    75% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito6, .Meteorito6::after{
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito6{
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 0.9s infinite ease-in-out;
+}
+
+.Meteorito6::after{
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 0.9s infinite ease-in-out;
+}
+
+
+@keyframes Meteorito6 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    25% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    48% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    75% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito7, .Meteorito7::after{
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito7{
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 1.2s infinite ease-in-out;
+}
+
+.Meteorito7::after{
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 1.2s infinite ease-in-out;
+}
+
+
+@keyframes Meteorito7 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    25% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    48% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    75% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito8, .Meteorito8::after{
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito8{
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 5s infinite ease-in-out;
+}
+
+.Meteorito8::after{
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 5s infinite ease-in-out;
+}
+
+
+@keyframes Meteorito8 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    25% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    48% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    75% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito8, .Meteorito8::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito8 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 7s infinite ease-in-out;
+}
+
+.Meteorito8::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 7s infinite ease-in-out;
+}
+
+@keyframes Meteorito8 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    25% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    48% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    75% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito9, .Meteorito9::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito9 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 10s infinite ease-in-out; /* Cambié la duración de la animación a 10 segundos */
+}
+
+.Meteorito9::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 10s infinite ease-in-out; /* Cambié la duración de la animación a 10 segundos */
+}
+
+@keyframes Meteorito9 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    25% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    48% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    75% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito10, .Meteorito10::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito10 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 10s infinite ease-in-out; /* Cambié la duración de la animación a 10 segundos */
+}
+
+.Meteorito10::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 10s infinite ease-in-out; /* Cambié la duración de la animación a 10 segundos */
+}
+
+@keyframes Meteorito10 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    25% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    48% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    75% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito11, .Meteorito11::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito11 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 8s infinite ease-in-out; /* Cambié la duración de la animación a 8 segundos */
+}
+
+.Meteorito11::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 8s infinite ease-in-out; /* Cambié la duración de la animación a 8 segundos */
+}
+
+@keyframes Meteorito11 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    25% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    48% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    75% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito12, .Meteorito12::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito12 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 12s infinite ease-in-out; /* Cambié la duración de la animación a 12 segundos */
+}
+
+.Meteorito12::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 12s infinite ease-in-out; /* Cambié la duración de la animación a 12 segundos */
+}
+
+@keyframes Meteorito12 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    25% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    48% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    75% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+.Meteorito13, .Meteorito13::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito13 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 1.7s infinite ease-in-out; /* Establecí una duración base de 10 segundos */
+}
+
+.Meteorito13::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 1.7s infinite ease-in-out; /* Establecí una duración base de 10 segundos */
+}
+
+@keyframes Meteorito13 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    12.5% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    24% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    75% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito14, .Meteorito14::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito14 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 8.6s infinite ease-in-out; /* Establecí una duración base de 8 segundos */
+}
+
+.Meteorito14::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 8.6s infinite ease-in-out; /* Establecí una duración base de 8 segundos */
+}
+
+@keyframes Meteorito14 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    15% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    30% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    75% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito15, .Meteorito15::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito15 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 15s infinite ease-in-out; /* Establecí una duración base de 15 segundos */
+}
+
+.Meteorito15::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 15s infinite ease-in-out; /* Establecí una duración base de 15 segundos */
+}
+
+@keyframes Meteorito15 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    10% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    20% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    80% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+.Meteorito16, .Meteorito16::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito16 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 12s infinite ease-in-out; /* Establecí una duración base de 12 segundos */
+}
+
+.Meteorito16::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 12s infinite ease-in-out; /* Establecí una duración base de 12 segundos */
+}
+
+@keyframes Meteorito16 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    18% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    36% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    72% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito17, .Meteorito17::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito17 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 14s infinite ease-in-out; /* Establecí una duración base de 14 segundos */
+}
+
+.Meteorito17::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 14s infinite ease-in-out; /* Establecí una duración base de 14 segundos */
+}
+
+@keyframes Meteorito17 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    20% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    40% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    70% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+.Meteorito18, .Meteorito18::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito18 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 16s infinite ease-in-out; /* Establecí una duración base de 16 segundos */
+}
+
+.Meteorito18::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 16s infinite ease-in-out; /* Establecí una duración base de 16 segundos */
+}
+
+@keyframes Meteorito18 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    22% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    44% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    66% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito19::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito19 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 14s infinite ease-in-out; /* Duración base de 14 segundos */
+}
+
+.Meteorito19::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 14s infinite ease-in-out; /* Duración base de 14 segundos */
+}
+
+@keyframes Meteorito19 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    22% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    44% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    66% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito20,
+.Meteorito20::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito20 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 14.7s infinite ease-in-out; /* Duración base de 14 segundos */
+}
+
+.Meteorito20::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 14.7s infinite ease-in-out; /* Duración base de 14 segundos */
+}
+
+@keyframes Meteorito20 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    22% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    44% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    66% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito21,
+.Meteorito21::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito21 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 16s infinite ease-in-out; /* Duración base de 16 segundos */
+}
+
+.Meteorito21::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 16s infinite ease-in-out; /* Duración base de 16 segundos */
+}
+
+@keyframes Meteorito21 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    18% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    36% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    72% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito22,
+.Meteorito22::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito22 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 16.9s infinite ease-in-out; /* Duración base de 16 segundos */
+}
+
+.Meteorito22::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 16.9s infinite ease-in-out; /* Duración base de 16 segundos */
+}
+
+@keyframes Meteorito22 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    18% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    36% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    72% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito23,
+.Meteorito23::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito23 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 18s infinite ease-in-out; /* Duración base de 18 segundos */
+}
+
+.Meteorito23::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 18s infinite ease-in-out; /* Duración base de 18 segundos */
+}
+
+@keyframes Meteorito23 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    20% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    40% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    60% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito24,
+.Meteorito24::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito24 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 14s infinite ease-in-out; /* Duración base de 14 segundos */
+}
+
+.Meteorito24::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 14s infinite ease-in-out; /* Duración base de 14 segundos */
+}
+
+@keyframes Meteorito24 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    18% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    36% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    72% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+.Meteorito25,
+.Meteorito25::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito25 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 20s infinite ease-in-out; /* Duración base de 20 segundos */
+}
+
+.Meteorito25::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 20s infinite ease-in-out; /* Duración base de 20 segundos */
+}
+
+@keyframes Meteorito25 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    18% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    36% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    72% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito26,
+.Meteorito26::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito26 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 18s infinite ease-in-out; /* Duración base de 18 segundos */
+}
+
+.Meteorito26::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 18s infinite ease-in-out; /* Duración base de 18 segundos */
+}
+
+@keyframes Meteorito26 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    18% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    36% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    72% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+.Meteorito27,
+.Meteorito27::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito27 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 22s infinite ease-in-out; /* Duración base de 22 segundos */
+}
+
+.Meteorito27::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 22s infinite ease-in-out; /* Duración base de 22 segundos */
+}
+
+@keyframes Meteorito27 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    18% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    36% {
+        z-index: 2.
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    72% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito28,
+.Meteorito28::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito28 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 20s infinite ease-in-out; /* Duración base de 20 segundos */
+}
+
+.Meteorito28::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 20s infinite ease-in-out; /* Duración base de 20 segundos */
+}
+
+@keyframes Meteorito28 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    18% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    36% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    72% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito29,
+.Meteorito29::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito29 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 24s infinite ease-in-out; /* Duración base de 24 segundos */
+}
+
+.Meteorito29::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 24s infinite ease-in-out; /* Duración base de 24 segundos */
+}
+
+@keyframes Meteorito29 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    18% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    36% {
+        z-index: 2.
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    72% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito30,
+.Meteorito30::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito30 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 22s infinite ease-in-out; /* Duración base de 22 segundos */
+}
+
+.Meteorito30::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 22s infinite ease-in-out; /* Duración base de 22 segundos */
+}
+
+@keyframes Meteorito30 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    18% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    36% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    72% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito31,
+.Meteorito31::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito31 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 26s infinite ease-in-out; /* Duración base de 26 segundos */
+}
+
+.Meteorito31::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 26s infinite ease-in-out; /* Duración base de 26 segundos */
+}
+
+@keyframes Meteorito31 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    18% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    36% {
+        z-index: 2.
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    72% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}
+
+.Meteorito32,
+.Meteorito32::after {
+    content: "";
+    position: absolute;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+.Meteorito32 {
+    background-image: url('./images/Asteroide.jfif');
+    background-size: cover;
+    box-shadow: -2em 0 5em -1em;
+    overflow: hidden;
+    transition: 250ms;
+    left: 20em;
+    transform: rotate(0deg);
+    animation: round 24s infinite ease-in-out; /* Duración base de 24 segundos */
+}
+
+.Meteorito32::after {
+    background: #262938;
+    width: 2.5em;
+    left: 2.5em;
+    box-shadow: 0 0 0.75em 0.95em #262938;
+    animation: shadow 24s infinite ease-in-out; /* Duración base de 24 segundos */
+}
+
+@keyframes Meteorito32 {
+    0%, 100% {
+        top: 160em;
+        left: 50em;
+        box-shadow: -2em 0 5em 0.5em #c6836466;
+        z-index: 8;
+    }
+
+    18% {
+        box-shadow: 0 0 3em 1em #412104b5;
+    }
+
+    36% {
+        z-index: 2;
+    }
+
+    50% {
+        left: 40em;
+        top: 20em;
+        z-index: -1;
+        box-shadow: 2em 0 5em 0.5em #845a4682;
+    }
+
+    72% {
+        box-shadow: 0 0 3em 1em black;
+    }
+
+    99% {
+        z-index: -1;
+    }
+}

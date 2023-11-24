@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>El Sistema Solar</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        #navbar {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        #navbar a {
+            display: block;
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #navbar a#title {
+            float: left;
+        }
+
+        #navbar a#planets {
+            float: right;
+        }
+
+        #planetBox {
+            display: none;
+            position: fixed;
+            top: 60px;
+            right: 0;
+            background-color: #202020;
+            padding: 20px;
+            border: 1px solid #202020;
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            margin-top: 60px;
+        }
+
+        .star {
+            position: absolute;
+            background-color: white;
+            width: 0.1px;
+            height: 0.1px;
+        }
+        #audioContainer {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        audio {
+            width: 100%;
+        }
+        
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <a id="title">El Sistema Solar</a>
+        <a id="planets" href="#">Planetas</a>
+    </div>
+
+    <div id="planetBox">
+        <a href="Mercurio.html">Mercurio</a>
+        <a href="Venus.html">Venus</a>
+        <a href="Tierra.html">Tierra</a>
+        <a href="Marte.html">Marte</a>
+        <a href="Jupiter.html">Júpiter</a>
+        <a href="Saturno.html">Saturno</a>
+        <a href="Urano.html">Urano</a>
+        <a href="Neptuno.html">Neptuno</a>
+        <a href="Pluto.html">Pluto</a>
+    </div>
+
+    <div class="container">
+        <div class="sun">
+            <img src="./images/sun.png" alt="sun">
+        </div>
+        <div class="mercury"></div>
+        <div class="venus"></div>
+        <div class="earth">
+            <div class="moon"></div>
+        </div>
+        <div class="mars"></div>
+        <div class="jupiter"></div>
+        <div class="saturn"></div>
+        <div class="uranus"></div>
+        <div class="neptune"></div>
+        <div class="pluto"></div>
+    </div>
+
+    <div class="footer">
+        <audio controls loop>
+            <source src="./sound/Starfield Suite  Starfield OST.mp3" type="audio/mp3">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+    <canvas id="starsCanvas"></canvas>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const planetBox = document.getElementById("planetBox");
+
+            document.getElementById("planets").addEventListener("click", function (event) {
+                event.preventDefault();
+                planetBox.style.display = (planetBox.style.display === "block") ? "none" : "block";
+            });
+        });
+
+        function createStars() {
+            const container = document.querySelector("body");
+            const starCount = calculateStarCount();
+
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement("div");
+                star.className = "star";
+                star.style.top = Math.random() * 100 + "%";
+                star.style.left = Math.random() * 100 + "%";
+                container.appendChild(star);
+            }
+        }
+
+        function calculateStarCount() {
+            const zoomLevel = window.devicePixelRatio || 1; // Obtener el nivel de zoom actual
+            const baseStarCount = 1000; // Número base de estrellas
+
+            // Ajustar la cantidad de estrellas según el nivel de zoom
+            return Math.floor(baseStarCount * zoomLevel);
+        }
+
+        // Llamar a createStars después de que la página esté completamente cargada
+        window.addEventListener("load", function () {
+            createStars();
+        });
+
+        // Volver a crear las estrellas cuando cambie el tamaño de la ventana (zoom)
+        window.addEventListener("resize", function () {
+            const container = document.querySelector("body");
+            const stars = document.querySelectorAll(".star");
+
+            // Eliminar estrellas existentes
+            stars.forEach(star => container.removeChild(star));
+
+            // Volver a crear estrellas
+            createStars();
+        });
+    </script>
+</body>
+
+</html>

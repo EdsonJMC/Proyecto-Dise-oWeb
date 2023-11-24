@@ -1,0 +1,23 @@
+body{
+    background-color: #101227;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 12px;
+}
+
+.Mercurio{
+    width: 8cm;
+    height: 8cm;
+    background: rgba(255, 240, 174, 0.502);
+    background-image: url('./images/mercury.png');
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 
+        0 0 5em 0 #fed84c80,
+        0 0 20em 4em #e8a55233,
+        0 0 55em 8em #ff4d4d1a;
+        position: relative;
+}
